@@ -1,13 +1,11 @@
 import "./App.css";
-import Card from "./components/Card";
+import Formulario from "./components/Formulario";
 
 function App() {
 	return (
 		<>
-			<h1>Carga de estudiantes </h1>
-			<form></form>
-			<Card />
-			<p>ininio</p>
+			<h3>Carga de estudiantes </h3>
+			<Formulario/>
 		</>
 	);
 }
