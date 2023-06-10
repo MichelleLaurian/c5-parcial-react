@@ -18,12 +18,13 @@ function Formulario() {
       [name]: value
     }))
   }
-  let regex = /\s/g
+  let regex = /^\s/
   const handleSubmit = (e) => {
     e.preventDefault()
 
     if (
       (datos.nombre).length > 3
+      && !(regex.test(datos.nombre))
       && (datos.band).length > 6
     ) {
       setShow(true)
